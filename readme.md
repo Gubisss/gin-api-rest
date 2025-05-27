@@ -1,38 +1,33 @@
-API REST em Go com Gin
-Este projeto é uma API REST construída utilizando o framework Gin em Go. A API permite a criação, leitura, atualização e deleção de registros, integrando-se com um banco de dados PostgreSQL. E utilizando Docker.
+# API REST em Go com Gin
 
-🛠 Tecnologias e Ferramentas
-Linguagem: Go (Golang)
+Este projeto é uma API REST construída utilizando o framework **Gin** em **Go**. A API permite a criação, leitura, atualização e deleção de registros, integrando-se com um banco de dados **PostgreSQL** e utilizando **Docker**.
 
-Framework Web: Gin — Framework HTTP para Go
+## 🛠 Tecnologias e Ferramentas
 
-Banco de Dados: PostgreSQL
+- **Linguagem**: Go (Golang)
+- **Framework Web**: [Gin](https://github.com/gin-gonic/gin) — Framework HTTP para Go
+- **Banco de Dados**: PostgreSQL
+- **Gerenciamento de Dependências**: Go Modules
+- **Containerização**: Docker & Docker Compose
+- **ORM**: [GORM](https://gorm.io/) — ORM para Go
+- **Driver PostgreSQL**: [pgx](https://github.com/jackc/pgx) integrado ao GORM
 
-Gerenciamento de Dependências: Go Modules
+## 📦 Bibliotecas Principais
 
-Containerização: Docker & Docker Compose
+- `github.com/gin-gonic/gin` — Framework web
+- `gorm.io/gorm` — ORM para Go
+- `gorm.io/driver/postgres` — Driver PostgreSQL para GORM
 
-ORM: GORM — ORM para Go
+## 🚀 Como Executar o Projeto
 
-Driver PostgreSQL: pgx integrado ao GORM
+### 🔧 Pré-requisitos
 
-📦 Bibliotecas Principais
-github.com/gin-gonic/gin — Framework web
+- **Go** instalado (versão 1.21 ou superior)
+- **Docker** e **Docker Compose** instalados
 
-gorm.io/gorm — ORM para Go
+## ▶️ Executar com Docker Compose
 
-gorm.io/driver/postgres — Driver PostgreSQL para GORM
-
-🚀 Como Executar o Projeto
-🔧 Pré-requisitos
-Go instalado (versão 1.21 ou superior)
-
-Docker e Docker Compose instalados
-
-▶️ Executar com Docker Compose
 bash
-Copiar
-Editar
 docker-compose up --build
 🔗 API disponível em:
 arduino
@@ -50,10 +45,9 @@ PUT /alunos/:id — Atualiza os dados de um aluno
 
 DELETE /alunos/:id — Remove um aluno
 
-🗄️ Estrutura do Projeto
+## 🗄️ Estrutura do Projeto
 python
-Copiar
-Editar
+
 .
 ├── main.go                # Arquivo principal que inicia o servidor
 ├── routes/                # Arquivos que definem as rotas
@@ -69,13 +63,11 @@ db: Banco de dados PostgreSQL na porta 5432
 
 api: A aplicação Go na porta 8080
 
-📚 Comandos Úteis
+## 📚 Comandos Úteis
 Rodar localmente sem Docker:
 bash
-Copiar
-Editar
 
 go run main.go
 
-✍️ Autor
+## ✍️ Autor
 Desenvolvido por Gustavo Aguilar
